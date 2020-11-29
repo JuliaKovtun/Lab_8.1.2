@@ -36,7 +36,7 @@ char* Insert(char* str, const char* substr, const char c1)
 	Insert3(tmp, str, k + 1, n);
 
 	tmp[n] = '\0';
-	strcpy(str, tmp);
+	strcpy_s(str, 100, tmp);
 	return tmp;
 }
 
